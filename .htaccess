@@ -1,8 +1,6 @@
-AuthUserFile /.htpasswd
-AuthGroupFile /dev/null
-AuthName "Please enter your ID and password"
-AuthType Basic
-
+AuthUserFile "/.htpasswd"
+AuthName "Enter password"
+AuthType BASIC
 require valid-user
 
 <files ~="" "^\.(htaccess|htpasswd)$"="">
